@@ -1,0 +1,206 @@
+/* ========================================== 
+ESTILOS GENERALES 
+========================================== */ 
+*{ 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+    } 
+    body{ 
+    font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif; 
+    background:#f4f6f9; 
+    color:#333; 
+    line-height:1.6; 
+    } 
+    /* ========================================== 
+    CONTENEDOR PRINCIPAL 
+    ========================================== */ 
+    .contenedor{ 
+    width:90%; 
+    max-width:1000px; 
+    margin:30px auto; 
+    background:#ffffff; 
+    border-radius:8px; 
+    box-shadow:0 3px 10px rgba(0,0,0,.15); 
+    overflow:hidden; 
+    } 
+    /* ========================================== 
+    ENCABEZADO 
+    ========================================== */ 
+    header{ 
+    background:#0d6efd; 
+    color:#fff; 
+    padding:20px 30px; 
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center; 
+    flex-wrap:wrap; 
+    } 
+    header h1{ 
+    font-size:2rem; 
+    } 
+    .usuario{ 
+    display:flex; 
+    align-items:center; 
+    gap:15px; 
+    font-size:1rem; 
+    } 
+    /* ========================================== 
+    BOTONES 
+    ========================================== */ 
+    .boton{ 
+    display:inline-block; 
+    padding:10px 18px; 
+    background:#ffffff; 
+    color:#0d6efd; 
+    text-decoration:none; 
+    border-radius:5px; 
+    font-weight:bold; 
+    transition:.3s; 
+    } 
+    .boton:hover{ 
+    background:#084298; 
+    color:white; 
+    } 
+    /* ========================================== 
+    SECCIONES 
+    ========================================== */ 
+    section{ 
+    margin:25px; 
+    } 
+    section h2{ 
+    background:#0d6efd; 
+    color:white; 
+    padding:10px 15px; 
+    border-radius:4px 4px 0 0; 
+    font-size:1.2rem; 
+    } 
+    /* ========================================== 
+    LISTAS 
+    ========================================== */ 
+    ul{ 
+    list-style:none; 
+    border:1px solid #dcdcdc; 
+    border-top:none; 
+    margin-bottom:25px; 
+    } 
+    ul li{ 
+    border-bottom:1px solid #ececec; 
+    }
+    ul li:last-child{ 
+    border-bottom:none; 
+    } 
+    ul li a{ 
+    display:block; 
+    padding:12px 15px; 
+    text-decoration:none; 
+    color:#0d6efd; 
+    transition:.25s; 
+    } 
+    ul li a:hover{ 
+    background:#f1f5ff; 
+    padding-left:22px; 
+    } 
+    /* ========================================== 
+    FORMULARIO LOGIN 
+    ========================================== */ 
+    .formulario{ 
+    width:420px; 
+    margin:70px auto; 
+    background:white; 
+    padding:30px; 
+    border-radius:8px; 
+    box-shadow:0 3px 12px rgba(0,0,0,.18); 
+    } 
+    .formulario h2{ 
+    text-align:center; 
+    margin-bottom:25px; 
+    color:#0d6efd; 
+    } 
+    label{ 
+    display:block; 
+    margin-top:15px; 
+    margin-bottom:5px; 
+    font-weight:bold; 
+    } 
+    input[type=text], 
+    input[type=password]{ 
+    width:100%; 
+    padding:12px; 
+    border:1px solid #ccc; 
+    border-radius:5px; 
+    font-size:15px; 
+    } 
+    input:focus{ 
+    outline:none; 
+    border-color:#0d6efd; 
+    } 
+    /* ========================================== 
+    BOTONES DEL FORMULARIO 
+    ========================================== */ 
+    button{ 
+    width:100%; 
+    margin-top:25px;
+    padding:12px; 
+    border:none; 
+    border-radius:5px; 
+    background:#0d6efd; 
+    color:white; 
+    font-size:16px; 
+    cursor:pointer; 
+    transition:.3s; 
+    } 
+    button:hover{ 
+    background:#084298; 
+    } 
+    /* ========================================== 
+    MENSAJES 
+    ========================================== */ 
+    .mensaje{ 
+    text-align:center; 
+    padding:50px; 
+    } 
+    .mensaje h1{ 
+    color:#0d6efd; 
+    margin-bottom:20px; 
+    } 
+    .mensaje p{ 
+    margin-bottom:15px; 
+    } 
+    /* ========================================== 
+    MENSAJES DE ERROR 
+    ========================================== */ 
+    .error{ 
+    margin-top:20px; 
+    padding:12px; 
+    background:#fde8e8; 
+    color:#b00020; 
+    border:1px solid #f5bcbc; 
+    border-radius:5px; 
+    text-align:center; 
+    } 
+    /* ========================================== 
+    PIE DE PÁGINA 
+    ========================================== */ 
+    footer{ 
+    text-align:center; 
+    color:#777; 
+    font-size:.9rem; 
+    padding:20px; 
+    } 
+    /* ========================================== 
+    RESPONSIVE 
+    ========================================== */ 
+    @media(max-width:768px){ 
+    header{ 
+    flex-direction:column; 
+    text-align:center; 
+    gap:20px;
+    } 
+    .usuario{ 
+    flex-direction:column; 
+    } 
+    .formulario{ 
+    width:90%; 
+    } 
+    } 
